@@ -1,0 +1,53 @@
+<!-- HTML File: index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agro-Automation Dashboard</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <h1>Agro-Automation Dashboard</h1>
+    <form id="add-plant-form">
+        <h2>Add Plant</h2>
+        <label for="plant_name">Plant Name:</label>
+        <input type="text" id="plant_name" name="plant_name" placeholder="e.g., Tomato" required>
+
+        <label for="reference_humidity">Reference Soil Moisture (%):</label>
+        <input type="number" id="reference_humidity" name="reference_humidity" placeholder="Ideal soil moisture content in %" required>
+
+        <label for="reference_temperature">Temperature Conditions (°C):</label>
+        <input type="number" id="reference_temperature" name="reference_temperature" placeholder="e.g., 25" required>
+
+        <label for="reference_minerals">Amount of Minerals (%):</label>
+        <input type="number" id="reference_minerals" name="reference_minerals" placeholder="Ideal amount of minerals in the soil in %" required>
+
+        <button type="submit">Add Plant</button>
+    </form>
+    
+    <form id="daily-plant-data-form">
+        <h2>Daily Plant Data</h2>
+        <label for="plant_name">Plant Name:</label>
+        <input type="text" id="plant_name" name="plant_name" placeholder="e.g., Tomato" required>
+
+        <label for="soil_moisture_content">Soil Moisture Content (%):</label>
+        <input type="number" id="soil_moisture_content" name="soil_moisture_content" placeholder="Current soil moisture content in %" required>
+        
+        <label for="temperature_conditions">Temperature Conditions (°C):</label>
+        <input type="number" id="temperature_conditions" name="temperature_conditions" placeholder="Current temperature, e.g., 25" required>
+
+        <label for="amount_of_mineral_substance">Amount of Minerals (%):</label>
+        <input type="number" id="amount_of_mineral_substance" name="amount_of_mineral_substance" placeholder="Current amount of minerals in the soil in %" required>
+        
+        <button type="submit">Add Daily Data</button>
+    </form>
+
+    <button onclick="window.location='humidity.html'">Humidity Data</button>
+    <button onclick="window.location='minerals.html'">Minerals Data</button>
+    <button onclick="window.location='temperature.html'">Temperature Data</button>
+
+    <script src="../js/scripts.js"></script>
+</body>
+</html>

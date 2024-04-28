@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+}
+
+header {
+    background: #005a87;
+    color: #ffffff;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+h1 {
+    margin-top: 0;
+}
+
+form {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="number"],
+button,
+label {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-top: 10px; /* Increased margin-top */
+    margin-bottom: 10px; /* Added margin-bottom */
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+label {
+    display: block; /* Make labels block elements */
+    margin-top: 20px; /* Increased spacing for labels */
+}
+
+button {
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px; /* Increased spacing for buttons */
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.canvas-container {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+canvas {
+    width: 100% !important;
+    height: auto !important;
+}
+
+.back-button {
+    display: block;
+    width: 100%;
+    text-align: center;
+    background: #e7e7e7;
+    color: #333;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 16px;
+    margin-top: 20px; /* Ensure consistent spacing above back button */
+}
+
+.back-button:hover {
+    background: #d4d4d4;
+}
